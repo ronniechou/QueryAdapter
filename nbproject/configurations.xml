@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>AuthorityParameter.h</itemPath>
+      <itemPath>CheckSystemListener.h</itemPath>
+      <itemPath>MBusAuthorityListener.h</itemPath>
+      <itemPath>common.h</itemPath>
+      <itemPath>ecgw.h</itemPath>
+      <itemPath>tinyxml2.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>CheckSystemListener.cpp</itemPath>
+      <itemPath>MBusAuthorityListener.cpp</itemPath>
+      <itemPath>common.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>tinyxml2.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Linux_Release_32" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <architecture>1</architecture>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>../Speedy/Migo</pElem>
+            <pElem>../Speedy/UFC</pElem>
+          </incDir>
+          <commandLine>-g -Wall -MMD -Wshadow -Wno-write-strings -Wno-deprecated</commandLine>
+          <preprocessorList>
+            <Elem>__LINUX</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+        <linkerTool>
+          <output>../Release/linux/QueryAdapter/QueryAdapter</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../Speedy/Release/linux/UFC.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lcurl</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="AuthorityParameter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CheckSystemListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CheckSystemListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MBusAuthorityListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MBusAuthorityListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ecgw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tinyxml2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tinyxml2.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Linux_Release_64" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>../../Speedy/Migo</pElem>
+            <pElem>../../Speedy/UFC</pElem>
+          </incDir>
+          <commandLine>-Wall -MMD -Wshadow -Wno-write-strings -Wno-deprecated</commandLine>
+          <preprocessorList>
+            <Elem>__LINUX</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+        <linkerTool>
+          <output>../Release/linux/MBusExample_64</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../Speedy/Release/linux/UFC_64.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="AuthorityParameter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CheckSystemListener.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="CheckSystemListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MBusAuthorityListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MBusAuthorityListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ecgw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="tinyxml2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tinyxml2.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
